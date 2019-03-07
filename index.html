@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shisha-Bar-Game</title>
+    <script language="JavaScript" src="src/Mines.js" defer></script>
+    <script language="JavaScript" src="src/LumberCamp.js" defer></script>
+    <script language="JavaScript" src="src/BoardGenerator.js" defer></script>
+    <script language="JavaScript" src="src/Game.js" defer></script>
+
+    <style>
+        #game > div {
+            height: 50px;
+        }
+
+        #game > div > div {
+            background: url("./assets/tileable_grass_00.png") no-repeat;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border: thin solid black;
+            border-collapse: collapse;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        #game > div > div:hover {
+            cursor: pointer;
+        }
+
+        .lumberCamp {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            margin: 0;
+            background: url("./assets/lumberCamp.jpg") no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div id="woodCount"></div>
+<div id="game"></div>
+</body>
+</html>
